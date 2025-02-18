@@ -20,9 +20,11 @@ class Employee extends Person{
     }
 }
 
-const obj2 = new Employee("Vivek",32,"manager");
-obj2.jobGreet();
-obj2.greet();
+const alice = new Person("Alice", 25);
+alice.greet(); // This should log 'Hello, my name is Alice and I am 25 years old.'
+
+const bob = new Employee("Bob", 30, "Manager");
+bob.jobGreet(); // This should log 'Hello, my name is Bob, I am 30 years old, and my job title is Manager.'
 
 // Do not change code below this line
 window.Person = Person;
